@@ -1,0 +1,38 @@
+{
+  "presentationTable" : {
+    "name" : "Orders",
+    "presentationColumns" : [ {
+      "name" : "Bill Date",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Orders.Bill Date"
+    }, {
+      "name" : "Channel",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Orders.Channel"
+    }, {
+      "name" : "Order Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Orders.Order Number"
+    }, {
+      "name" : "Order Status",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Orders.Order Status"
+    }, {
+      "name" : "Paid Date",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Orders.Paid Date"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Orders Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:SampleApp.Orders",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Orders.Total"
+      }, {
+        "name" : "Order Status",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Orders.Order Status",
+        "displayColumn" : "presentationColumn:SampleApp.Orders.Order Status"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Orders.Detail",
+        "displayColumn" : "presentationColumn:SampleApp.Orders.Order Number"
+      } ]
+    } ]
+  }
+}

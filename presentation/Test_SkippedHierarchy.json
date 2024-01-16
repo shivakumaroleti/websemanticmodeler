@@ -1,0 +1,16 @@
+{
+  "subjectArea" : {
+    "name" : "Test_SkippedHierarchy",
+    "sourceBusinessModel" : "businessModel:Test_SkippedHierarchy",
+    "alternateNames" : [ "PC0" ],
+    "tableOrder" : [ {
+      "name" : "presentationTable:Test_SkippedHierarchy.CLOUD_D_ORDERS_S"
+    }, {
+      "name" : "presentationTable:Test_SkippedHierarchy.CLOUD_F_BILL_REV"
+    } ],
+    "localization" : {
+      "localizationKey" : "Test_SkippedHierarchy",
+      "nameVariable" : "Test_SkippedHierarchy"
+    }
+  }
+}

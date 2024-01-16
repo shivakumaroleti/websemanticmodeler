@@ -1,0 +1,11 @@
+{
+  "subjectArea" : {
+    "name" : "OA_HERE_MAPS",
+    "sourceBusinessModel" : "businessModel:OA_HERE_MAPS",
+    "tableOrder" : [ {
+      "name" : "presentationTable:OA_HERE_MAPS.DIM_MAP"
+    }, {
+      "name" : "presentationTable:OA_HERE_MAPS.FACT_MAP"
+    } ]
+  }
+}

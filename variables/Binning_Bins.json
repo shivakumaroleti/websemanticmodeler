@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "Binning_Bins",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Sample-Connection_1.VCP",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "select 15 from dual"
+    } ],
+    "variables" : [ {
+      "name" : "Binning_Bins",
+      "description" : ":~#:PC2:~#:RAAS_",
+      "value" : "15",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : false
+  }
+}

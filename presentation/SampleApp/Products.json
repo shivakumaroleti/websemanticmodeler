@@ -1,0 +1,53 @@
+{
+  "presentationTable" : {
+    "name" : "Products",
+    "presentationColumns" : [ {
+      "name" : "Brand",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Products.Brand"
+    }, {
+      "name" : "Item Description",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Products.Item Description"
+    }, {
+      "name" : "LOB",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Products.LOB"
+    }, {
+      "name" : "Product",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Products.Product"
+    }, {
+      "name" : "Product Item Key",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Products.Product Item Key"
+    }, {
+      "name" : "Product Type",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Products.Product Type"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Products",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:SampleApp.Products",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Products.Total"
+      }, {
+        "name" : "Brand",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Products.Brand",
+        "displayColumn" : "presentationColumn:SampleApp.Products.Brand"
+      }, {
+        "name" : "LOB",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Products.LOB",
+        "displayColumn" : "presentationColumn:SampleApp.Products.LOB"
+      }, {
+        "name" : "Product Type",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Products.Product Type",
+        "displayColumn" : "presentationColumn:SampleApp.Products.Product Type"
+      }, {
+        "name" : "Product",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Products.Product",
+        "displayColumn" : "presentationColumn:SampleApp.Products.Product"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Products.Detail",
+        "displayColumn" : "presentationColumn:SampleApp.Products.Product Item Key"
+      } ]
+    } ]
+  }
+}

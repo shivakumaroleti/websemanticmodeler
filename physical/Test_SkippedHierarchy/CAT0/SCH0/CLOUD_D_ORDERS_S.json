@@ -1,0 +1,32 @@
+{
+  "physicalTable" : {
+    "name" : "CLOUD_D_ORDERS_S",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "G1",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "G2",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "G3",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "ORDER_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "ORDER_STATUS" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

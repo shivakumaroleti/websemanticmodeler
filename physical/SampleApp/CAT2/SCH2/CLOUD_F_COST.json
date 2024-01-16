@@ -1,0 +1,92 @@
+{
+  "physicalTable" : {
+    "name" : "CLOUD_F_COST",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ORDER_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ADDR_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CUST_NUMBER",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COST_FIXED",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PROD_ITEM_KEY",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "REVENUE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TIME_BILL_DT",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "UNITS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COST_VARIABLE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:SampleApp.CAT2.SCH2.CLOUD_D_CUSTOMERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_COST.CUST_NUMBER",
+        "rightColumn" : "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_D_CUSTOMERS.CUST_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:SampleApp.CAT2.SCH2.CLOUD_D_GEOGRAPHY",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_COST.ADDR_KEY",
+        "rightColumn" : "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_D_GEOGRAPHY.ADDR_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:SampleApp.CAT2.SCH2.CLOUD_D_ORDERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_COST.ORDER_KEY",
+        "rightColumn" : "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_D_ORDERS.ORDER_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:SampleApp.CAT2.SCH2.CLOUD_D_PRODUCTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_COST.PROD_ITEM_KEY",
+        "rightColumn" : "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_D_PRODUCTS.PROD_ITEM_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:SampleApp.CAT2.SCH2.CLOUD_TIME_SMALL",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_COST.TIME_BILL_DT",
+        "rightColumn" : "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_TIME_SMALL.DAY_DT"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "presentationTable" : {
+    "name" : "CLOUD_D_ORDERS_S",
+    "presentationColumns" : [ {
+      "name" : "G1",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_D_ORDERS_S.G1"
+    }, {
+      "name" : "G2",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_D_ORDERS_S.G2"
+    }, {
+      "name" : "G3",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_D_ORDERS_S.G3"
+    }, {
+      "name" : "ORDER_STATUS",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_D_ORDERS_S.ORDER_STATUS"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Test_SkippedHierarchy.CLOUD_D_ORDERS_S",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Test_SkippedHierarchy.CLOUD_D_ORDERS_S.Total"
+      }, {
+        "name" : "G1",
+        "sourceLogicalLevel" : "logicalLevel:Test_SkippedHierarchy.CLOUD_D_ORDERS_S.G1",
+        "displayColumn" : "presentationColumn:Test_SkippedHierarchy.CLOUD_D_ORDERS_S.G1"
+      }, {
+        "name" : "G2",
+        "sourceLogicalLevel" : "logicalLevel:Test_SkippedHierarchy.CLOUD_D_ORDERS_S.G2",
+        "displayColumn" : "presentationColumn:Test_SkippedHierarchy.CLOUD_D_ORDERS_S.G2"
+      }, {
+        "name" : "G3",
+        "sourceLogicalLevel" : "logicalLevel:Test_SkippedHierarchy.CLOUD_D_ORDERS_S.G3",
+        "displayColumn" : "presentationColumn:Test_SkippedHierarchy.CLOUD_D_ORDERS_S.G3"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Test_SkippedHierarchy.CLOUD_D_ORDERS_S.Detail",
+        "displayColumn" : "presentationColumn:Test_SkippedHierarchy.CLOUD_D_ORDERS_S.ORDER_STATUS"
+      } ]
+    } ]
+  }
+}

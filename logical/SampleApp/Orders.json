@@ -1,0 +1,123 @@
+{
+  "logicalTable" : {
+    "name" : "Orders",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Order Number" ],
+    "logicalColumns" : [ {
+      "name" : "Bill Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_D_ORDERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_D_ORDERS.TIME_BILL_DT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Channel",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_D_ORDERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_D_ORDERS.CHANNEL_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Order Number",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_D_ORDERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_D_ORDERS.ORDER_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Order Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_D_ORDERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_D_ORDERS.ORDER_STATUS" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Order Status"
+    }, {
+      "name" : "Paid Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_D_ORDERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_D_ORDERS.TIME_PAID_DT" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "CLOUD_D_ORDERS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:SampleApp.CAT2.SCH2.CLOUD_D_ORDERS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Order Status",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Order Status" ],
+        "displayKey" : "Order Status",
+        "chronologicalKey" : [ "Order Status" ]
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Order Number" ],
+        "displayKey" : "Order Number",
+        "chronologicalKey" : [ "Order Number" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Orders",
+        "description" : "Copy Dim Hierarchy Description",
+        "levels" : [ "Total", "Order Status", "Detail" ]
+      } ]
+    }
+  }
+}

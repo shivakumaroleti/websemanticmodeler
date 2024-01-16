@@ -1,0 +1,336 @@
+{
+  "logicalTable" : {
+    "name" : "Advanced Calcs",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "COST_FIXED",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_F_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_BILL_REV_CALC.COST_FIXED" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COST_VARIABLE",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_F_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_BILL_REV_CALC.COST_VARIABLE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Data Filtered Revenue (Brand)",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_F_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_BILL_REV_CALC.REVENUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Discount Value",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_F_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_BILL_REV_CALC.DISCNT_VALUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Full Company Revenue",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_F_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_BILL_REV_CALC.REVENUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Full Quarter Revenue",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_F_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_BILL_REV_CALC.REVENUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "PROD_ITEM_KEY",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_F_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_BILL_REV_CALC.PROD_ITEM_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Revenue",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_F_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_BILL_REV_CALC.REVENUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "TIME_BILL_DT",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_F_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_BILL_REV_CALC.TIME_BILL_DT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "UNITS",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_F_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_BILL_REV_CALC.UNITS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "# of Customers",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_F_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_BILL_REV_CALC.CUST_NUMBER" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# of Orders",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_F_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_BILL_REV_CALC.ORDER_KEY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "ADDR_KEY",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_F_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_F_BILL_REV_CALC.ADDR_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "% of Full Company Revenue",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2 * 100",
+          "expressionObjects" : [ "logicalColumn:SampleApp.Advanced Calcs.Revenue", "logicalColumn:SampleApp.Advanced Calcs.Full Company Revenue" ]
+        }
+      }
+    }, {
+      "name" : "% of Full Quarter Revenue",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2 * 100",
+          "expressionObjects" : [ "logicalColumn:SampleApp.Advanced Calcs.Revenue", "logicalColumn:SampleApp.Advanced Calcs.Full Quarter Revenue" ]
+        }
+      }
+    }, {
+      "name" : "Rev - % Month Ago Increase",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 /  AGO(%1, %2, 1) * 100 - 100",
+          "expressionObjects" : [ "logicalColumn:SampleApp.Advanced Calcs.Revenue", "logicalLevel:SampleApp.Time.Month" ]
+        }
+      }
+    }, {
+      "name" : "Rev - Trailing 3 Months",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " PeriodRolling(%1, -(5), 0) / 6",
+          "expressionObjects" : [ "logicalColumn:SampleApp.Advanced Calcs.Revenue" ]
+        }
+      }
+    }, {
+      "name" : "Rev - Month Ago",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " AGO(%1, %2, 1)",
+          "expressionObjects" : [ "logicalColumn:SampleApp.Advanced Calcs.Revenue", "logicalLevel:SampleApp.Time.Month" ]
+        }
+      }
+    }, {
+      "name" : "Rev - Year To Date",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " TODATE(%1, %2)",
+          "expressionObjects" : [ "logicalColumn:SampleApp.Advanced Calcs.Revenue", "logicalLevel:SampleApp.Time.Year" ]
+        }
+      }
+    }, {
+      "name" : "Revenue Bin",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " EVALUATE('WIDTH_BUCKET (\\%1,\\%2,\\%3,\\%4)', %1,  VALUEOF(NQ_SESSION.%2),  VALUEOF(NQ_SESSION.%3),  VALUEOF(NQ_SESSION.%4))",
+          "expressionObjects" : [ "logicalColumn:SampleApp.Advanced Calcs.Revenue", "variable:Binning_Min.Binning_Min", "variable:Bins_Max_Bound.Bins_Max_Bound", "variable:Binning_Bins.Binning_Bins" ]
+        }
+      }
+    }, {
+      "name" : "Revenue Bin Width",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "( VALUEOF(NQ_SESSION.%1) -  VALUEOF(NQ_SESSION.%2)) /  VALUEOF(NQ_SESSION.%3)",
+          "expressionObjects" : [ "variable:Bins_Max_Bound.Bins_Max_Bound", "variable:Binning_Min.Binning_Min", "variable:Binning_Bins.Binning_Bins" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "CLOUD_F_BILL_REV_CALC_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:SampleApp.CAT2.SCH2.CLOUD_F_BILL_REV_CALC" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:SampleApp.Customers",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:SampleApp.Geography",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:SampleApp.Orders",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:SampleApp.Products",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:SampleApp.Time",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

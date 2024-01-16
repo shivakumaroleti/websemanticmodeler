@@ -1,0 +1,10 @@
+{
+  "subjectArea" : {
+    "name" : "PC3",
+    "sourceBusinessModel" : "businessModel:BM3",
+    "localization" : {
+      "localizationKey" : "PC3",
+      "nameVariable" : "SD_Test"
+    }
+  }
+}

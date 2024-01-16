@@ -1,0 +1,107 @@
+{
+  "physicalTable" : {
+    "name" : "NTC_MAP_POI_RESTAURANT",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ACTUAL_ADDRESS",
+      "dataType" : "VARCHAR",
+      "length" : 240,
+      "nullable" : true
+    }, {
+      "name" : "CAT_ID",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "CHAIN_ID",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "CUISINE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "GEOMETRY",
+      "dataType" : "UNKNOWN",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "ISO_COUNTRY_CODE",
+      "dataType" : "CHAR",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "LANGUAGE_CODE",
+      "dataType" : "CHAR",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "LINK_ID",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "NAME",
+      "dataType" : "VARCHAR",
+      "length" : 240,
+      "nullable" : true
+    }, {
+      "name" : "NAME_ID",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "PARTITION_ID",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "POI_CITY",
+      "dataType" : "VARCHAR",
+      "length" : 240,
+      "nullable" : true
+    }, {
+      "name" : "POI_HOUSE_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "POI_ID",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : false
+    }, {
+      "name" : "POI_PHONENUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "POI_POSTCODE",
+      "dataType" : "VARCHAR",
+      "length" : 15,
+      "nullable" : true
+    }, {
+      "name" : "POI_SIDE",
+      "dataType" : "CHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "POI_STREET_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 240,
+      "nullable" : true
+    }, {
+      "name" : "RESTAURANT_TYPE",
+      "dataType" : "INT",
+      "length" : 2,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "POI_ID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

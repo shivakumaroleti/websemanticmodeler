@@ -1,0 +1,81 @@
+{
+  "presentationTable" : {
+    "name" : "Geography",
+    "presentationColumns" : [ {
+      "name" : "Area",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Geography.Area"
+    }, {
+      "name" : "Address 1",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Geography.Address 1"
+    }, {
+      "name" : "Address 2",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Geography.Address 2"
+    }, {
+      "name" : "Address Key",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Geography.Address Key"
+    }, {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Geography.City"
+    }, {
+      "name" : "Country Code",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Geography.Country Code"
+    }, {
+      "name" : "Country Name",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Geography.Country Name"
+    }, {
+      "name" : "Latitude",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Geography.Latitude"
+    }, {
+      "name" : "Longitude",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Geography.Longitude"
+    }, {
+      "name" : "Postal Code",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Geography.Postal Code"
+    }, {
+      "name" : "Region",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Geography.Region"
+    }, {
+      "name" : "State Province",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Geography.State Province"
+    }, {
+      "name" : "Country_City",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Geography.Country_City"
+    }, {
+      "name" : "Country_State Province",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Geography.Country_State Province"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Geographies",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:SampleApp.Geography",
+      "levels" : [ {
+        "name" : "All Geographies",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Geography.All Geographies"
+      }, {
+        "name" : "Region",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Geography.Region",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.Region"
+      }, {
+        "name" : "Area",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Geography.Area",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.Area"
+      }, {
+        "name" : "Country Name",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Geography.Country Name",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.Country Name"
+      }, {
+        "name" : "State Province",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Geography.State Province",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.State Province"
+      }, {
+        "name" : "City",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Geography.City",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.City"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Geography.Detail",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.Address Key"
+      } ]
+    } ]
+  }
+}

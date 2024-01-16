@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "Bins_Max_Bound",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Sample-Connection_1.VCP",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "Select 100000 from dual"
+    } ],
+    "variables" : [ {
+      "name" : "Bins_Max_Bound",
+      "description" : ":~#:PC2:~#:RAAS_",
+      "value" : "100000",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : false
+  }
+}

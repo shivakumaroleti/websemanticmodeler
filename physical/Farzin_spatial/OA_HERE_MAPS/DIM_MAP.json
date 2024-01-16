@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "DIM_MAP",
+    "sourceTable": "physicalTable:Farzin_spatial.OA_HERE_MAPS.NTC_MAP_POI_RESTAURANT",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "CAT_ID"
+      ]
+    ]
+  }
+}

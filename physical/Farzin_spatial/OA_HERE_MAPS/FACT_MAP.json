@@ -1,0 +1,18 @@
+{
+  "physicalTable": {
+    "name": "FACT_MAP",
+    "sourceTable": "physicalTable:Farzin_spatial.OA_HERE_MAPS.NTC_MAP_POI_RESTAURANT",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "rightTable": "physicalTable:Farzin_spatial.OA_HERE_MAPS.DIM_MAP",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:Farzin_spatial.OA_HERE_MAPS.FACT_MAP.CAT_ID",
+            "rightColumn": "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.CAT_ID"
+          }
+        ]
+      }
+    ]
+  }
+}

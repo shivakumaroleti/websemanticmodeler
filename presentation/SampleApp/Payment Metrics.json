@@ -1,0 +1,45 @@
+{
+  "presentationTable" : {
+    "name" : "Payment Metrics",
+    "presentationColumns" : [ {
+      "name" : "# of Address",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Payment Metrics.# of Address",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "# of Customers",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Payment Metrics.# of Customers"
+    }, {
+      "name" : "# of Orders",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Payment Metrics.# of Orders"
+    }, {
+      "name" : "# of Products",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Payment Metrics.# of Products"
+    }, {
+      "name" : "Discount Amout",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Payment Metrics.Discount Amout"
+    }, {
+      "name" : "Fixed Cost",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Payment Metrics.Fixed Cost",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Paid Amount",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Payment Metrics.Paid Amount"
+    }, {
+      "name" : "Paid Units",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Payment Metrics.Paid Units"
+    }, {
+      "name" : "Time Paid Dt",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Payment Metrics.Time Paid Dt"
+    }, {
+      "name" : "Variable Cost",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Payment Metrics.Variable Cost",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ]
+  }
+}

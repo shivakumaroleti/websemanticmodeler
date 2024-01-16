@@ -1,0 +1,270 @@
+{
+  "logicalTable" : {
+    "name" : "DIM_MAP",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "ACTUAL_ADDRESS",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.ACTUAL_ADDRESS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CAT_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.CAT_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CHAIN_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.CHAIN_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUISINE_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.CUISINE_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ISO_COUNTRY_CODE",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.ISO_COUNTRY_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "LANGUAGE_CODE",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.LANGUAGE_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "LINK_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.LINK_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "NAME_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.NAME_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PARTITION_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.PARTITION_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "POI_CITY",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.POI_CITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "POI_HOUSE_NUMBER",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.POI_HOUSE_NUMBER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "POI_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.POI_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "POI_PHONENUMBER",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.POI_PHONENUMBER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "POI_POSTCODE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.POI_POSTCODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "POI_SIDE",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.POI_SIDE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "POI_STREET_NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.POI_STREET_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "RESTAURANT_TYPE",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_MAP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Farzin_spatial.OA_HERE_MAPS.DIM_MAP.RESTAURANT_TYPE" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "DIM_MAP",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Farzin_spatial.OA_HERE_MAPS.DIM_MAP" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "CAT_ID" ]
+  }
+}

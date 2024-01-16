@@ -1,0 +1,153 @@
+{
+  "presentationTable" : {
+    "name" : "Time",
+    "presentationColumns" : [ {
+      "name" : "Day Of Year",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Day Of Year"
+    }, {
+      "name" : "Julian Day Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Julian Day Number"
+    }, {
+      "name" : "Julian Month Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Julian Month Number"
+    }, {
+      "name" : "Julian Quarter Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Julian Quarter Number",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Trimester Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Julian Trimester Number",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Week Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Julian Week Number",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Year Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Julian Year Number",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Month"
+    }, {
+      "name" : "Month Name",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Month Name"
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Quarter"
+    }, {
+      "name" : "Trimester",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Trimester",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Week",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Week"
+    }, {
+      "name" : "Week By Year",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Week By Year",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Year"
+    }, {
+      "name" : "Month #",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Month #"
+    }, {
+      "name" : "Cal Month Key",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Cal Month Key",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Quarter #",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Quarter #"
+    }, {
+      "name" : "Cal Qtr Key",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Cal Qtr Key",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Cal Trimester",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Cal Trimester",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Week #",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Week #"
+    }, {
+      "name" : "Cal Year",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Cal Year",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Cal Year Key",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Cal Year Key",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Date"
+    }, {
+      "name" : "Date Id",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Date Id",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Date Timestamp",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Date Timestamp",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Day Name",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Day Name"
+    }, {
+      "name" : "Day of Month",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Day of Month"
+    }, {
+      "name" : "Day Of Week",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Time.Day Of Week"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Time Hierarchy",
+      "sourceLogicalTable" : "logicalTable:SampleApp.Time",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Time.Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Time.Year",
+        "displayColumn" : "presentationColumn:SampleApp.Time.Year"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Time.Quarter",
+        "displayColumn" : "presentationColumn:SampleApp.Time.Quarter"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Time.Month",
+        "displayColumn" : "presentationColumn:SampleApp.Time.Month"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Time.Day",
+        "displayColumn" : "presentationColumn:SampleApp.Time.Date"
+      } ]
+    } ]
+  }
+}

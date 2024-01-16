@@ -1,0 +1,45 @@
+{
+  "presentationTable" : {
+    "name" : "CLOUD_F_BILL_REV",
+    "presentationColumns" : [ {
+      "name" : "ADDR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_F_BILL_REV.ADDR_KEY"
+    }, {
+      "name" : "CHANNEL_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_F_BILL_REV.CHANNEL_NAME"
+    }, {
+      "name" : "COST_FIXED",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_F_BILL_REV.COST_FIXED"
+    }, {
+      "name" : "COST_VARIABLE",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_F_BILL_REV.COST_VARIABLE"
+    }, {
+      "name" : "CUST_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_F_BILL_REV.CUST_NUMBER"
+    }, {
+      "name" : "DISCNT_VALUE",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_F_BILL_REV.DISCNT_VALUE"
+    }, {
+      "name" : "ORDER_KEY",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_F_BILL_REV.ORDER_KEY"
+    }, {
+      "name" : "ORDER_STATUS",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_F_BILL_REV.ORDER_STATUS"
+    }, {
+      "name" : "PROD_ITEM_KEY",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_F_BILL_REV.PROD_ITEM_KEY"
+    }, {
+      "name" : "REVENUE",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_F_BILL_REV.REVENUE"
+    }, {
+      "name" : "TIME_BILL_DT",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_F_BILL_REV.TIME_BILL_DT"
+    }, {
+      "name" : "TIME_PAID_DT",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_F_BILL_REV.TIME_PAID_DT"
+    }, {
+      "name" : "UNITS",
+      "sourceLogicalColumn" : "logicalColumn:Test_SkippedHierarchy.CLOUD_F_BILL_REV.UNITS"
+    } ]
+  }
+}

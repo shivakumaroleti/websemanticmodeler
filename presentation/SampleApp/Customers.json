@@ -1,0 +1,65 @@
+{
+  "presentationTable" : {
+    "name" : "Customers",
+    "presentationColumns" : [ {
+      "name" : "Cust Birth Date",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Customers.Cust Birth Date"
+    }, {
+      "name" : "Cust Credit Rate",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Customers.Cust Credit Rate"
+    }, {
+      "name" : "Cust Gender",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Customers.Cust Gender"
+    }, {
+      "name" : "Cust Marital Status",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Customers.Cust Marital Status"
+    }, {
+      "name" : "Cust Name",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Customers.Cust Name"
+    }, {
+      "name" : "Cust Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Customers.Cust Number"
+    }, {
+      "name" : "Cust Segment",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Customers.Cust Segment"
+    }, {
+      "name" : "Cust Type",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Customers.Cust Type"
+    }, {
+      "name" : "Cust Age",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Customers.Cust Age"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Segments",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:SampleApp.Customers",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Customers.Total"
+      }, {
+        "name" : "Cust Segment",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Customers.Cust Segment",
+        "displayColumn" : "presentationColumn:SampleApp.Customers.Cust Segment"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Customers.Detail",
+        "displayColumn" : "presentationColumn:SampleApp.Customers.Cust Number"
+      } ]
+    }, {
+      "name" : "Marital Status",
+      "sourceLogicalTable" : "logicalTable:SampleApp.Customers",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Customers.Total"
+      }, {
+        "name" : "Cust Marital Status",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Customers.Cust Marital Status",
+        "displayColumn" : "presentationColumn:SampleApp.Customers.Cust Marital Status"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp.Customers.Detail",
+        "displayColumn" : "presentationColumn:SampleApp.Customers.Cust Number"
+      } ]
+    } ]
+  }
+}

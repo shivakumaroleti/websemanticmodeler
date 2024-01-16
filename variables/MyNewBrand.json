@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "MyNewBrand",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Sample-Connection_1.VCP",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "select PROD_BRAND from Cloud_d_products where PROD_BRAND = 'BizTech'"
+    } ],
+    "variables" : [ {
+      "name" : "MyNewBrand",
+      "description" : "RAAS_",
+      "value" : "'FunPod'",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : false
+  }
+}

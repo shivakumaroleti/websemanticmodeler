@@ -1,0 +1,87 @@
+{
+  "presentationTable" : {
+    "name" : "Advanced Calcs",
+    "presentationColumns" : [ {
+      "name" : "COST_FIXED",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.COST_FIXED",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COST_VARIABLE",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.COST_VARIABLE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Data Filtered Revenue (Brand)",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.Data Filtered Revenue (Brand)"
+    }, {
+      "name" : "Discount Value",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.Discount Value"
+    }, {
+      "name" : "Full Company Revenue",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.Full Company Revenue"
+    }, {
+      "name" : "Full Quarter Revenue",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.Full Quarter Revenue"
+    }, {
+      "name" : "PROD_ITEM_KEY",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.PROD_ITEM_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Revenue",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.Revenue"
+    }, {
+      "name" : "TIME_BILL_DT",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.TIME_BILL_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "UNITS",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.UNITS",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "# of Customers",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.# of Customers"
+    }, {
+      "name" : "# of Orders",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.# of Orders"
+    }, {
+      "name" : "ADDR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.ADDR_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "% of Full Company Revenue",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.% of Full Company Revenue"
+    }, {
+      "name" : "% of Full Quarter Revenue",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.% of Full Quarter Revenue"
+    }, {
+      "name" : "Rev - % Month Ago Increase",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.Rev - % Month Ago Increase"
+    }, {
+      "name" : "Rev - Trailing 3 Months",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.Rev - Trailing 3 Months"
+    }, {
+      "name" : "Rev - Month Ago",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.Rev - Month Ago"
+    }, {
+      "name" : "Rev - Year To Date",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.Rev - Year To Date"
+    }, {
+      "name" : "Revenue Bin",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.Revenue Bin"
+    }, {
+      "name" : "Revenue Bin Width",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Advanced Calcs.Revenue Bin Width"
+    } ]
+  }
+}

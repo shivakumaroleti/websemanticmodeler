@@ -1,0 +1,164 @@
+{
+  "logicalTable" : {
+    "name" : "Products",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Product Item Key" ],
+    "logicalColumns" : [ {
+      "name" : "Brand",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_D_PRODUCTS.PROD_BRAND" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Brand"
+    }, {
+      "name" : "Item Description",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_D_PRODUCTS.PROD_ITEM_DSC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "LOB",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_D_PRODUCTS.PROD_LOB" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "LOB"
+    }, {
+      "name" : "Product",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_D_PRODUCTS.PRODUCT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Product"
+    }, {
+      "name" : "Product Item Key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_D_PRODUCTS.PROD_ITEM_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Type",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleApp.CAT2.SCH2.CLOUD_D_PRODUCTS.PROD_TYPE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Product Type"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "CLOUD_D_PRODUCTS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:SampleApp.CAT2.SCH2.CLOUD_D_PRODUCTS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Brand",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Brand" ],
+        "displayKey" : "Brand",
+        "chronologicalKey" : [ "Brand" ]
+      }, {
+        "name" : "LOB",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "LOB" ],
+        "displayKey" : "LOB",
+        "chronologicalKey" : [ "LOB" ]
+      }, {
+        "name" : "Product Type",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Product Type" ],
+        "displayKey" : "Product Type",
+        "chronologicalKey" : [ "Product Type" ]
+      }, {
+        "name" : "Product",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Product" ],
+        "displayKey" : "Product",
+        "chronologicalKey" : [ "Product" ]
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Product Item Key" ],
+        "displayKey" : "Product Item Key",
+        "chronologicalKey" : [ "Product Item Key" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Products",
+        "description" : "Copy Dim Hierarchy Description",
+        "levels" : [ "Total", "Brand", "LOB", "Product Type", "Product", "Detail" ]
+      } ]
+    }
+  }
+}

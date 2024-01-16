@@ -1,0 +1,10 @@
+{
+  "subjectArea" : {
+    "name" : "PC4",
+    "sourceBusinessModel" : "businessModel:BM4",
+    "localization" : {
+      "localizationKey" : "PC4",
+      "nameVariable" : "My_Model"
+    }
+  }
+}

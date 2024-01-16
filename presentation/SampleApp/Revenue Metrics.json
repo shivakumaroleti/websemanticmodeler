@@ -1,0 +1,67 @@
+{
+  "presentationTable" : {
+    "name" : "Revenue Metrics",
+    "presentationColumns" : [ {
+      "name" : "# of Customers",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Revenue Metrics.# of Customers"
+    }, {
+      "name" : "# of Orders",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Revenue Metrics.# of Orders"
+    }, {
+      "name" : "# of Products",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Revenue Metrics.# of Products"
+    }, {
+      "name" : "ADDR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Revenue Metrics.ADDR_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Avg Order Size",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Revenue Metrics.Avg Order Size"
+    }, {
+      "name" : "Billed Units",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Revenue Metrics.Billed Units"
+    }, {
+      "name" : "CHANNEL_NAME",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Revenue Metrics.CHANNEL_NAME",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Cost Fixed",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Revenue Metrics.Cost Fixed",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Cost Variable",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Revenue Metrics.Cost Variable"
+    }, {
+      "name" : "Discount Ratio %",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Revenue Metrics.Discount Ratio %"
+    }, {
+      "name" : "Discount Value",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Revenue Metrics.Discount Value"
+    }, {
+      "name" : "ORDER_STATUS",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Revenue Metrics.ORDER_STATUS",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Revenue",
+      "description" : "Larry",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Revenue Metrics.Revenue"
+    }, {
+      "name" : "TIME_BILL_DT",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Revenue Metrics.TIME_BILL_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Unit Price",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Revenue Metrics.Unit Price"
+    } ]
+  }
+}

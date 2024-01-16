@@ -1,0 +1,58 @@
+{
+  "presentationTable" : {
+    "name" : "Profit Metrics",
+    "presentationColumns" : [ {
+      "name" : "# of Orders",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Profit Metrics.# of Orders"
+    }, {
+      "name" : "ADDR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Profit Metrics.ADDR_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CUST_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Profit Metrics.CUST_NUMBER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Fixed Costs",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Profit Metrics.Fixed Costs"
+    }, {
+      "name" : "PROD_ITEM_KEY",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Profit Metrics.PROD_ITEM_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "REVENUE",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Profit Metrics.REVENUE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TIME_BILL_DT",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Profit Metrics.TIME_BILL_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Units",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Profit Metrics.Units"
+    }, {
+      "name" : "Variable Costs",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Profit Metrics.Variable Costs"
+    }, {
+      "name" : "Profit Ratio %",
+      "description" : "Profitability Ask",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Profit Metrics.Profit Ratio %"
+    }, {
+      "name" : "Profit Value",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Profit Metrics.Profit Value"
+    }, {
+      "name" : "Total Costs",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp.Profit Metrics.Total Costs"
+    } ]
+  }
+}

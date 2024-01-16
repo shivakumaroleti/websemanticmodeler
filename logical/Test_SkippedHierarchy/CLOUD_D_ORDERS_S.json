@@ -1,0 +1,127 @@
+{
+  "logicalTable" : {
+    "name" : "CLOUD_D_ORDERS_S",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "ORDER_STATUS" ],
+    "logicalColumns" : [ {
+      "name" : "G1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_D_ORDERS_S_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Test_SkippedHierarchy.CAT0.SCH0.CLOUD_D_ORDERS_S.G1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "G1"
+    }, {
+      "name" : "G2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_D_ORDERS_S_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Test_SkippedHierarchy.CAT0.SCH0.CLOUD_D_ORDERS_S.G2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "G2"
+    }, {
+      "name" : "G3",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_D_ORDERS_S_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Test_SkippedHierarchy.CAT0.SCH0.CLOUD_D_ORDERS_S.G3" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "G3"
+    }, {
+      "name" : "ORDER_STATUS",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_D_ORDERS_S_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Test_SkippedHierarchy.CAT0.SCH0.CLOUD_D_ORDERS_S.ORDER_STATUS" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "CLOUD_D_ORDERS_S_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Test_SkippedHierarchy.CAT0.SCH0.CLOUD_D_ORDERS_S" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : true,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "G1",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "G1" ],
+        "displayKey" : "G1",
+        "chronologicalKey" : [ "G1" ]
+      }, {
+        "name" : "G2",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "G2" ],
+        "displayKey" : "G2",
+        "chronologicalKey" : [ "G2" ]
+      }, {
+        "name" : "G3",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "G3" ],
+        "displayKey" : "G3",
+        "chronologicalKey" : [ "G3" ]
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "ORDER_STATUS" ],
+        "displayKey" : "ORDER_STATUS",
+        "chronologicalKey" : [ "ORDER_STATUS" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "CLOUD_D_ORDERS_S",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "G1", "G2", "G3", "Detail" ]
+      } ]
+    }
+  }
+}
